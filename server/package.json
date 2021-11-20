@@ -1,0 +1,35 @@
+{
+  "name": "worknet",
+  "version": "1.0.0",
+  "description": "A Social Network for Professionals",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "server": "nodemon src/server.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"  npm run client  \""
+  },
+  "author": "Michael Volakis, Miltos Kartalas",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.997.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "multer": "^1.4.3",
+    "node-sass": "^6.0.1",
+    "sharp": "^0.28.3",
+    "socket.io": "^4.2.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
